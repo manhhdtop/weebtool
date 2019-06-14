@@ -7,4 +7,13 @@
 
 	<display-name>Web tool by Takatori</display-name>
 
+	<error-page>
+		<error-code>404</error-code>
+		<location>/404-page-not-found</location>
+	</error-page>
+
+	<error-page>
+		<error-code>500</error-code>
+		<location>/500-internal-server-error</location>
+	</error-page>
 </web-app>

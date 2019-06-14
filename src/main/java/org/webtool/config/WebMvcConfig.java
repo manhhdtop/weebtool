@@ -17,7 +17,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter
 	{
 		registry.addResourceHandler("/css/**").addResourceLocations("/WEB-INF/resource/css/")
 		        .setCachePeriod(31556926);
-		registry.addResourceHandler("/fonts/**").addResourceLocations("/WEB-INF/resource/fonts/")
+		registry.addResourceHandler("/font/**").addResourceLocations("/WEB-INF/resource/font/")
 		        .setCachePeriod(31556926);
 		registry.addResourceHandler("/icon/**").addResourceLocations("/WEB-INF/resource/icon/")
 		        .setCachePeriod(31556926);
