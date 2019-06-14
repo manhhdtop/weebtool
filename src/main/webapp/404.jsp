@@ -9,8 +9,8 @@
 			<div class="page_error_iner">
 				<div class="page_error_item">
 					<span class="display-1 d-block">404</span>
-					<div class="mb-4 lead">Trang web bạn yêu cầu không tồn tại hoặc đã bị
-						xóa.</div>
+					<div class="mb-4 lead">Trang web bạn yêu cầu không tồn tại
+						hoặc đã bị xóa.</div>
 					<a href="/" class="btn btn-link">Quay về Trang chủ</a>
 				</div>
 			</div>
