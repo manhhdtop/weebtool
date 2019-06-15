@@ -26,7 +26,7 @@
 		<div class="row">
 			<div class="section_tittle">
 				<h2>
-					<span>about</span> us
+					<span>about</span> me
 				</h2>
 			</div>
 		</div>

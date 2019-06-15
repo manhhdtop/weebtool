@@ -30,129 +30,29 @@
 				<div class="blog_left_sidebar">
 					<article class="blog_item">
 						<div class="blog_item_img">
-							<img class="card-img rounded-0" src="img/blog/single_blog_1.png"
-								alt=""> <a href="#" class="blog_item_date">
+							<img class="card-img rounded-0" src="img/post/java.jpeg" alt="">
+							<span class="blog_item_date">
 								<h3>15</h3>
-								<p>Jan</p>
-							</a>
+								<p>May</p>
+							</span>
 						</div>
 
 						<div class="blog_details">
 							<a class="d-inline-block" href="single-blog.html">
-								<h2>Google inks pact for new 35-storey office</h2>
+								<h2>Hướng dẫn cài đặt java</h2>
 							</a>
-							<p>That dominion stars lights dominion divide years for
-								fourth have don't stars is that he earth it first without heaven
-								in place seed it second morning saying.</p>
+							<p>Hướng dẫn chi tiết cài đặt jdk, JAVA_HOME và tạo một
+								project hello world.</p>
 							<ul class="blog-info-link">
-								<li><a href="#"><i class="far fa-user"></i> Travel,
-										Lifestyle</a></li>
+								<li><a href="#"><i class="fas fa-stream"></i> Java Core
+								</a></li>
 								<li><a href="#"><i class="far fa-comments"></i> 03
 										Comments</a></li>
 							</ul>
 						</div>
 					</article>
 
-					<article class="blog_item">
-						<div class="blog_item_img">
-							<img class="card-img rounded-0" src="img/blog/single_blog_2.png"
-								alt=""> <a href="#" class="blog_item_date">
-								<h3>15</h3>
-								<p>Jan</p>
-							</a>
-						</div>
-
-						<div class="blog_details">
-							<a class="d-inline-block" href="single-blog.html">
-								<h2>Google inks pact for new 35-storey office</h2>
-							</a>
-							<p>That dominion stars lights dominion divide years for
-								fourth have don't stars is that he earth it first without heaven
-								in place seed it second morning saying.</p>
-							<ul class="blog-info-link">
-								<li><a href="#"><i class="far fa-user"></i> Travel,
-										Lifestyle</a></li>
-								<li><a href="#"><i class="far fa-comments"></i> 03
-										Comments</a></li>
-							</ul>
-						</div>
-					</article>
-
-					<article class="blog_item">
-						<div class="blog_item_img">
-							<img class="card-img rounded-0" src="img/blog/single_blog_3.png"
-								alt=""> <a href="#" class="blog_item_date">
-								<h3>15</h3>
-								<p>Jan</p>
-							</a>
-						</div>
-
-						<div class="blog_details">
-							<a class="d-inline-block" href="single-blog.html">
-								<h2>Google inks pact for new 35-storey office</h2>
-							</a>
-							<p>That dominion stars lights dominion divide years for
-								fourth have don't stars is that he earth it first without heaven
-								in place seed it second morning saying.</p>
-							<ul class="blog-info-link">
-								<li><a href="#"><i class="far fa-user"></i> Travel,
-										Lifestyle</a></li>
-								<li><a href="#"><i class="far fa-comments"></i> 03
-										Comments</a></li>
-							</ul>
-						</div>
-					</article>
-
-					<article class="blog_item">
-						<div class="blog_item_img">
-							<img class="card-img rounded-0" src="img/blog/single_blog_4.png"
-								alt=""> <a href="#" class="blog_item_date">
-								<h3>15</h3>
-								<p>Jan</p>
-							</a>
-						</div>
-
-						<div class="blog_details">
-							<a class="d-inline-block" href="single-blog.html">
-								<h2>Google inks pact for new 35-storey office</h2>
-							</a>
-							<p>That dominion stars lights dominion divide years for
-								fourth have don't stars is that he earth it first without heaven
-								in place seed it second morning saying.</p>
-							<ul class="blog-info-link">
-								<li><a href="#"><i class="far fa-user"></i> Travel,
-										Lifestyle</a></li>
-								<li><a href="#"><i class="far fa-comments"></i> 03
-										Comments</a></li>
-							</ul>
-						</div>
-					</article>
-
-					<article class="blog_item">
-						<div class="blog_item_img">
-							<img class="card-img rounded-0" src="img/blog/single_blog_5.png"
-								alt=""> <a href="#" class="blog_item_date">
-								<h3>15</h3>
-								<p>Jan</p>
-							</a>
-						</div>
-
-						<div class="blog_details">
-							<a class="d-inline-block" href="single-blog.html">
-								<h2>Google inks pact for new 35-storey office</h2>
-							</a>
-							<p>That dominion stars lights dominion divide years for
-								fourth have don't stars is that he earth it first without heaven
-								in place seed it second morning saying.</p>
-							<ul class="blog-info-link">
-								<li><a href="#"><i class="far fa-user"></i> Travel,
-										Lifestyle</a></li>
-								<li><a href="#"><i class="far fa-comments"></i> 03
-										Comments</a></li>
-							</ul>
-						</div>
-					</article>
-
+					<!-- Pagination -->
 					<nav class="blog-pagination justify-content-center d-flex">
 						<ul class="pagination">
 							<li class="page-item"><a href="#" class="page-link"
@@ -176,7 +76,7 @@
 								<div class="input-group mb-3">
 									<input type="text"
 										class="form-control placeholder hide-on-focus"
-										placeholder="Search Keyword">
+										placeholder="Nhập từ khóa...">
 									<div class="input-group-append">
 										<button class="btn" type="button">
 											<i class="ti-search"></i>
@@ -185,35 +85,36 @@
 								</div>
 							</div>
 							<button class="button rounded-0 primary-bg text-white w-100"
-								type="submit">Search</button>
+								type="submit">Tìm kiếm</button>
 						</form>
 					</aside>
 
 					<aside class="single_sidebar_widget post_category_widget">
 						<h4 class="widget_title">Category</h4>
 						<ul class="list cat-list">
-							<li><a href="#" class="d-flex">
-									<p>Resaurant food</p>
-									<p>(37)</p>
+							<li><a href="html" class="d-flex">
+									<p>
+										<span>HTML</span><span>(37)</span>
+									</p>
 							</a></li>
 							<li><a href="#" class="d-flex">
-									<p>Travel news</p>
+									<p>CSS</p>
 									<p>(10)</p>
 							</a></li>
 							<li><a href="#" class="d-flex">
-									<p>Modern technology</p>
+									<p>Java</p>
 									<p>(03)</p>
 							</a></li>
 							<li><a href="#" class="d-flex">
-									<p>Product</p>
+									<p>Android</p>
 									<p>(11)</p>
 							</a></li>
 							<li><a href="#" class="d-flex">
-									<p>Inspiration</p>
+									<p>C#</p>
 									<p>(21)</p>
 							</a></li>
 							<li><a href="#" class="d-flex">
-									<p>Health Care</p>
+									<p>Kotlin</p>
 									<p>09</p>
 							</a></li>
 						</ul>
@@ -272,43 +173,17 @@
 						</ul>
 					</aside>
 
-
-					<aside class="single_sidebar_widget instagram_feeds">
-						<h4 class="widget_title">Instagram Feeds</h4>
-						<ul class="instagram_row flex-wrap">
-							<li><a href="#"> <img class="img-fluid"
-									src="img/post/post_5.png" alt="">
-							</a></li>
-							<li><a href="#"> <img class="img-fluid"
-									src="img/post/post_6.png" alt="">
-							</a></li>
-							<li><a href="#"> <img class="img-fluid"
-									src="img/post/post_7.png" alt="">
-							</a></li>
-							<li><a href="#"> <img class="img-fluid"
-									src="img/post/post_8.png" alt="">
-							</a></li>
-							<li><a href="#"> <img class="img-fluid"
-									src="img/post/post_9.png" alt="">
-							</a></li>
-							<li><a href="#"> <img class="img-fluid"
-									src="img/post/post_10.png" alt="">
-							</a></li>
-						</ul>
-					</aside>
-
-
 					<aside class="single_sidebar_widget newsletter_widget">
-						<h4 class="widget_title">Newsletter</h4>
+						<h4 class="widget_title">Đăng ký nhận tin tức mới</h4>
 
 						<form action="#">
 							<div class="form-group">
 								<input type="email"
 									class="form-control placeholder hide-on-focus"
-									placeholder="Enter email" required>
+									placeholder="Nhập email" required>
 							</div>
 							<button class="button rounded-0 primary-bg text-white w-100"
-								type="submit">Subscribe</button>
+								type="submit">Đăng ký</button>
 						</form>
 					</aside>
 				</div>

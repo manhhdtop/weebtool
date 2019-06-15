@@ -28,8 +28,8 @@
 				<h2 class="contact-title">Gửi mail</h2>
 			</div>
 			<div class="col-lg-8">
-				<form class="form-contact contact_form" action="contact_process.php"
-					method="post" id="contactForm" novalidate="novalidate">
+				<form class="form-contact contact_form" method="post"
+					id="contactForm" novalidate="novalidate">
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="form-group">

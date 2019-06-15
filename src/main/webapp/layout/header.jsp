@@ -41,8 +41,8 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<nav class="navbar navbar-expand-lg navbar-light">
-						<a class="navbar-brand" href="/"> <img class="logo-img" src="img/logo.png"
-							alt="logo">
+						<a class="navbar-brand" href="/"> <img class="logo-img"
+							src="img/logo.png" alt="logo">
 						</a>
 						<button class="navbar-toggler" type="button"
 							data-toggle="collapse" data-target="#navbarNav"
@@ -77,7 +77,6 @@
 											class="dropdown-item" href="apartment.html">Apartment</a> <a
 											class="dropdown-item" href="elements.html">Elements</a>
 									</div></li>
-								<li class="nav-item"><a class="nav-link" href="about">About</a></li>
 								<li class="nav-item"><a class="nav-link" href="lien-he">Liên
 										hệ</a></li>
 							</ul>

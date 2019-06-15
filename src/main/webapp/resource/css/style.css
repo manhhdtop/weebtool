@@ -391,9 +391,12 @@ ul {
 /**************** extend css start ****************/
 /* line 29, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_extends.scss */
 .banner_part:after, .breadcrumb:after {
-	background: -webkit-linear-gradient(5deg, rgba(247, 51, 71, 0.9) 0%, rgba(18, 1, 248, 0.3) 100%);
-	background: -webkit-linear-gradient(5deg, rgba(247, 51, 71, 0.9) 0%, rgba(18, 1, 248, 0.3) 100%);
-	background: -ms-linear-gradient(5deg, rgba(247, 51, 71, 0.9) 0%, rgba(18, 1, 248, 0.3) 100%);
+	background: -webkit-linear-gradient(5deg, rgba(247, 51, 71, 0.9) 0%,
+		rgba(18, 1, 248, 0.3) 100%);
+	background: -webkit-linear-gradient(5deg, rgba(247, 51, 71, 0.9) 0%,
+		rgba(18, 1, 248, 0.3) 100%);
+	background: -ms-linear-gradient(5deg, rgba(247, 51, 71, 0.9) 0%,
+		rgba(18, 1, 248, 0.3) 100%);
 }
 
 /**************** extend css start ****************/
@@ -896,7 +899,7 @@ ul {
 }
 
 /* line 7, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_about.scss */
-.about_part .section_tittle h2 {
+.about_part .section_tittle h2, .blog_area .section_tittle h2 {
 	font-size: 24px;
 	font-weight: 700;
 	position: relative;
@@ -917,14 +920,15 @@ ul {
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
 	/* line 7, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_about.scss */
-	.about_part .section_tittle h2 {
+	.about_part .section_tittle h2, .blog_area .section_tittle h2 {
 		padding-left: 175px;
 		margin-bottom: 20px;
 	}
 }
 
 /* line 26, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_about.scss */
-.about_part .section_tittle h2:after {
+.about_part .section_tittle h2:after, .blog_area .section_tittle h2:after
+	{
 	position: absolute;
 	content: "";
 	left: 0;
@@ -936,7 +940,8 @@ ul {
 
 @media ( max-width : 991px) {
 	/* line 26, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_about.scss */
-	.about_part .section_tittle h2:after {
+	.about_part .section_tittle h2:after, .blog_area .section_tittle h2:after
+		{
 		width: 140px;
 		left: 15px;
 	}
@@ -944,7 +949,8 @@ ul {
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
 	/* line 26, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_about.scss */
-	.about_part .section_tittle h2:after {
+	.about_part .section_tittle h2:after, .blog_area .section_tittle h2:after
+		{
 		width: 140px;
 		left: 15px;
 	}
@@ -952,13 +958,14 @@ ul {
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
 	/* line 7, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_about.scss */
-	.about_part .section_tittle h2 {
+	.about_part .section_tittle h2, .blog_area .section_tittle h2 {
 		margin-bottom: 40px;
 	}
 }
 
 /* line 48, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_about.scss */
-.about_part .section_tittle h2 span {
+.about_part .section_tittle h2 span, .blog_area .section_tittle h2 span
+	{
 	color: #ff3334;
 }
 
@@ -1102,7 +1109,8 @@ ul {
 }
 
 /* line 159, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_about.scss */
-.about_part .about_text .about_part_counter .single_counter:first-child {
+.about_part .about_text .about_part_counter .single_counter:first-child
+	{
 	text-align: left;
 }
 
@@ -2099,12 +2107,14 @@ ul {
 }
 
 /* line 124, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_blog_part.scss */
-.blog_part .single_blog .single_appartment_content .list-unstyled li:hover {
+.blog_part .single_blog .single_appartment_content .list-unstyled li:hover
+	{
 	color: #ff3334;
 }
 
 /* line 127, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_blog_part.scss */
-.blog_part .single_blog .single_appartment_content .list-unstyled li:hover a {
+.blog_part .single_blog .single_appartment_content .list-unstyled li:hover a
+	{
 	color: #ff3334;
 }
 
@@ -2239,7 +2249,8 @@ ul {
 }
 
 /* line 232, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_blog_part.scss */
-.blog_part .right_single_blog .single_blog .media-body .list-unstyled li {
+.blog_part .right_single_blog .single_blog .media-body .list-unstyled li
+	{
 	display: inline-block;
 	margin-right: 10px;
 	font-size: 13px;
@@ -2248,17 +2259,20 @@ ul {
 }
 
 /* line 239, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_blog_part.scss */
-.blog_part .right_single_blog .single_blog .media-body .list-unstyled li:hover {
+.blog_part .right_single_blog .single_blog .media-body .list-unstyled li:hover
+	{
 	color: #ff3334;
 }
 
 /* line 242, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_blog_part.scss */
-.blog_part .right_single_blog .single_blog .media-body .list-unstyled li:hover a {
+.blog_part .right_single_blog .single_blog .media-body .list-unstyled li:hover a
+	{
 	color: #ff3334;
 }
 
 /* line 248, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_blog_part.scss */
-.blog_part .right_single_blog .single_blog .media-body .list-unstyled li a {
+.blog_part .right_single_blog .single_blog .media-body .list-unstyled li a
+	{
 	margin-right: 6px;
 	color: #2c2c2c;
 }
@@ -2630,7 +2644,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 127, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_elements.scss */
-.typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
+.typography h1, .typography h2, .typography h3, .typography h4,
+	.typography h5, .typography h6 {
 	color: #828bb2;
 }
 
@@ -2975,8 +2990,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 377, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_elements.scss */
-.progress-table .table-head .serial, .progress-table .table-head .country, .progress-table .table-head .visit,
-	.progress-table .table-head .percentage {
+.progress-table .table-head .serial, .progress-table .table-head .country,
+	.progress-table .table-head .visit, .progress-table .table-head .percentage
+	{
 	color: #415094;
 	line-height: 40px;
 	text-transform: uppercase;
@@ -2991,8 +3007,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 391, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_elements.scss */
-.progress-table .table-row .serial, .progress-table .table-row .country, .progress-table .table-row .visit,
-	.progress-table .table-row .percentage {
+.progress-table .table-row .serial, .progress-table .table-row .country,
+	.progress-table .table-row .visit, .progress-table .table-row .percentage
+	{
 	display: flex;
 	align-items: center;
 }
@@ -3491,7 +3508,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 798, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_elements.scss */
 .primary-checkbox input:checked+label {
-	background: url(../img/elements/primary-check.png) no-repeat center center/cover;
+	background: url(../img/elements/primary-check.png) no-repeat center
+		center/cover;
 	border: none;
 }
 
@@ -3533,7 +3551,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 835, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_elements.scss */
 .confirm-checkbox input:checked+label {
-	background: url(../img/elements/success-check.png) no-repeat center center/cover;
+	background: url(../img/elements/success-check.png) no-repeat center
+		center/cover;
 	border: none;
 }
 
@@ -3581,7 +3600,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 876, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_elements.scss */
 .disabled-checkbox input:checked+label {
-	background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
+	background: url(../img/elements/disabled-check.png) no-repeat center
+		center/cover;
 	border: none;
 }
 
@@ -3623,7 +3643,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 913, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_elements.scss */
 .primary-radio input:checked+label {
-	background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
+	background: url(../img/elements/primary-radio.png) no-repeat center
+		center/cover;
 	border: none;
 }
 
@@ -3665,7 +3686,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 950, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_elements.scss */
 .confirm-radio input:checked+label {
-	background: url(../img/elements/success-radio.png) no-repeat center center/cover;
+	background: url(../img/elements/success-radio.png) no-repeat center
+		center/cover;
 	border: none;
 }
 
@@ -3713,7 +3735,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 991, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_elements.scss */
 .disabled-radio input:checked+label {
-	background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
+	background: url(../img/elements/disabled-radio.png) no-repeat center
+		center/cover;
 	border: none;
 }
 
@@ -4806,6 +4829,11 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 }
 
+.blog_item_img img {
+	max-height: 350px;
+	border: 1px solid #efeded;
+}
+
 /* line 517, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_blog.scss */
 .blog_item_img .blog_item_date {
 	position: absolute;
@@ -4906,8 +4934,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 610, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_blog.scss */
-.blog_right_sidebar .search_widget .input-group button i, .blog_right_sidebar .search_widget .input-group button span
-	{
+.blog_right_sidebar .search_widget .input-group button i,
+	.blog_right_sidebar .search_widget .input-group button span {
 	font-size: 14px;
 	color: #999999;
 }
@@ -4939,8 +4967,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 646, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_blog.scss */
-.blog_right_sidebar .newsletter_widget .input-group button i, .blog_right_sidebar .newsletter_widget .input-group button span
-	{
+.blog_right_sidebar .newsletter_widget .input-group button i,
+	.blog_right_sidebar .newsletter_widget .input-group button span {
 	font-size: 14px;
 	color: #999999;
 }
@@ -4990,7 +5018,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 703, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_blog.scss */
-.blog_right_sidebar .popular_post_widget .post_item .media-body a:hover {
+.blog_right_sidebar .popular_post_widget .post_item .media-body a:hover
+	{
 	color: #ff3334;
 }
 
@@ -5195,7 +5224,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 1012, ../../01 cl html template/New folder/May 2019/178 Real Estate/Real Estate Html/sass/_blog.scss */
-.single-post-area .navigation-top .like-info i, .single-post-area .navigation-top .like-info span {
+.single-post-area .navigation-top .like-info i, .single-post-area .navigation-top .like-info span
+	{
 	font-size: 16px;
 	margin-right: 5px;
 }

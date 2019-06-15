@@ -27,7 +27,7 @@
 		<div class="row">
 			<div class="section_tittle">
 				<h2>
-					<span>about</span> us
+					<span>Bài viết</span>
 				</h2>
 			</div>
 		</div>

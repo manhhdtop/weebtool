@@ -3,12 +3,12 @@ $(document).ready(function()
 	(function($)
 	{
 		"use strict";
-
+		
 		jQuery.validator.addMethod('answercheck', function(value, element)
 		{
 			return this.optional(element) || /^\bcat\b$/.test(value)
 		}, "type the correct answer -_-");
-
+		
 		// validate contactForm form
 		$(function()
 		{
@@ -28,7 +28,7 @@ $(document).ready(function()
 			        },
 			        message : {
 			            required : true,
-			            minlength : 20
+			            minlength : 10
 			        }
 			    },
 			    messages : {
@@ -53,27 +53,23 @@ $(document).ready(function()
 				    $(form).ajaxSubmit({
 				        type : "POST",
 				        data : $(form).serialize(),
-				        url : "contact_process.php",
-				        success : function()
+				        url : "gui-mail",
+				        timeout : 100000,
+				        success : function(res)
 				        {
-					        $('#contactForm :input').attr('disabled', 'disabled');
-					        $('#contactForm').fadeTo("slow", 1, function()
-					        {
-						        $(this).find(':input').attr('disabled', 'disabled');
-						        $(this).find('label').css('cursor', 'default');
-						        $('#success').fadeIn()
-						        $('.modal').modal('hide');
-						        $('#success').modal('show');
-					        })
+					        $(this).find(':input').attr('disabled', 'disabled');
+					        $(this).find('label').css('cursor', 'default');
+					        $('#success').fadeIn();
+					        $('#success').modal('show');
+					        console.log("Success");
+					        console.log(res);
 				        },
-				        error : function()
+				        error : function(res)
 				        {
-					        $('#contactForm').fadeTo("slow", 1, function()
-					        {
-						        $('#error').fadeIn()
-						        $('.modal').modal('hide');
-						        $('#error').modal('show');
-					        })
+					        $('#error').fadeIn();
+					        $('#error').modal('show');
+					        console.log("Error");
+					        console.log(res);
 				        }
 				    })
 			    }
