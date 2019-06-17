@@ -32,7 +32,7 @@ public class ApplicationContextConfig extends WebMvcConfigurationSupport
 	public InternalResourceViewResolver getViewResolver()
 	{
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-		viewResolver.setPrefix("/");
+		viewResolver.setPrefix("/page/");
 		viewResolver.setSuffix(".jsp");
 		return viewResolver;
 	}

@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
-<%@ include file="layout/header.jsp"%>
+<%@ include file="template/header.jsp"%>
 
 <!--::breadcrumb part start::-->
 <section class="breadcrumb blog_bg">
@@ -82,4 +81,4 @@
 </section>
 <!-- ================ contact section end ================= -->
 
-<%@ include file="layout/footer.jsp"%>
+<%@ include file="template/footer.jsp"%>

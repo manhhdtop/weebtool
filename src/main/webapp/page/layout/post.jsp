@@ -1,8 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
-<%@ include file="layout/header.jsp"%>
-
+<%@ include file="template/header.jsp"%>
 
 <!--::breadcrumb part start::-->
 <section class="breadcrumb blog_bg">
@@ -30,7 +28,7 @@
 				<div class="blog_left_sidebar">
 					<article class="blog_item">
 						<div class="blog_item_img">
-							<img class="card-img rounded-0" src="img/post/java.jpeg" alt="">
+							<img class="card-img rounded-0" src="/resource/img/post/java.jpeg" alt="">
 							<span class="blog_item_date">
 								<h3>15</h3>
 								<p>May</p>
@@ -194,4 +192,4 @@
 <!--================Blog Area =================-->
 
 
-<%@ include file="layout/footer.jsp"%>
+<%@ include file="template/footer.jsp"%>

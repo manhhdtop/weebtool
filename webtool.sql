@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th6 15, 2019 lúc 12:01 PM
+-- Thời gian đã tạo: Th6 17, 2019 lúc 11:59 AM
 -- Phiên bản máy phục vụ: 10.1.37-MariaDB
 -- Phiên bản PHP: 7.3.0
 
@@ -33,6 +33,8 @@ CREATE TABLE `category` (
   `parent_id` int(11) NOT NULL DEFAULT '0',
   `name` varchar(255) NOT NULL,
   `slug` varchar(255) NOT NULL,
+  `discription` varchar(255) NOT NULL DEFAULT '',
+  `type` int(11) NOT NULL DEFAULT '2' COMMENT '0: menu; 1: menu+category; 2: category',
   `created` double NOT NULL,
   `updated` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -41,16 +43,16 @@ CREATE TABLE `category` (
 -- Đang đổ dữ liệu cho bảng `category`
 --
 
-INSERT INTO `category` (`id`, `parent_id`, `name`, `slug`, `created`, `updated`) VALUES
-(1, 0, 'Trang chủ', '/', 1560591546000, 1560591546000),
-(2, 0, 'Bài viết', 'bai-viet', 1560591546000, 1560591546000),
-(3, 0, 'Thủ thuật', 'thu-thuat', 1560591546000, 1560591546000),
-(4, 0, 'Tool', 'tool', 1560591546000, 1560591546000),
-(5, 0, 'Liên hệ', 'lien-he', 1560591546000, 1560591546000),
-(7, 2, 'Java core', 'java-core', 1560591546000, 1560591546000),
-(8, 2, 'Java web', 'java-web', 1560591546000, 1560591546000),
-(9, 4, 'Timestamp', 'timestamp', 1560591546000, 1560591546000),
-(10, 4, 'Tính ngày', 'tinh-ngay', 1560591546000, 1560591546000);
+INSERT INTO `category` (`id`, `parent_id`, `name`, `slug`, `discription`, `type`, `created`, `updated`) VALUES
+(1, 0, 'Trang chủ', '', '', 0, 1560591546000, 1560591546000),
+(2, 0, 'Bài viết', 'bai-viet', 'Chia sẻ kiến thức, kinh nghiệm về lập trình.', 1, 1560591546000, 1560591546000),
+(3, 0, 'Thủ thuật', 'thu-thuat', '', 1, 1560591546000, 1560591546000),
+(4, 0, 'Tool', 'tool', '', 1, 1560591546000, 1560591546000),
+(5, 0, 'Liên hệ', 'lien-he', '', 0, 1560591546000, 1560591546000),
+(7, 2, 'Java core', 'java-core', '', 1, 1560591546000, 1560591546000),
+(8, 2, 'Java web', 'java-web', '', 1, 1560591546000, 1560591546000),
+(9, 4, 'Timestamp', 'tool/timestamp', '', 1, 1560591546000, 1560591546000),
+(10, 4, 'Tính ngày', 'tinh-ngay', '', 1, 1560591546000, 1560591546000);
 
 -- --------------------------------------------------------
 

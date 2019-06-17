@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
-<%@ include file="layout/header.jsp"%>
+<%@ include file="template/header.jsp"%>
+<%@ page isELIgnored="false"%>
 
 <!--::banner part start::-->
 <section class="banner_part">
@@ -34,7 +34,7 @@
 		<div class="row">
 			<div class="col-lg-6 col-md-6">
 				<div class="about_img">
-					<img src="img/about.png" alt="">
+					<img src="/resource/img/about.png" alt="">
 				</div>
 			</div>
 			<div class="offset-lg-1 col-lg-5 col-sm-8 col-md-6">
@@ -103,9 +103,9 @@
 						aria-labelledby="Architecture-tab">
 						<div class="col-lg-6 col-sm-12 col-md-6">
 							<div class="portfolio_box">
-								<a href="img/project-1.png" class="img-gal">
+								<a href="/resource/img/project-1.png" class="img-gal">
 									<div class="single_portfolio">
-										<img class="img-fluid w-100" src="img/project-1.png" alt="">
+										<img class="img-fluid w-100" src="/resource/img/project-1.png" alt="">
 									</div>
 								</a>
 								<div class="short_info">
@@ -122,9 +122,9 @@
 								<div
 									class="col-lg-12 col-sm-6 col-md-12 single_portfolio_project">
 									<div class="portfolio_box">
-										<a href="img/project-2.png" class="img-gal">
+										<a href="/resource/img/project-2.png" class="img-gal">
 											<div class="single_portfolio">
-												<img class="img-fluid w-100" src="img/project-2.png" alt="">
+												<img class="img-fluid w-100" src="/resource/img/project-2.png" alt="">
 											</div>
 										</a>
 										<div class="short_info">
@@ -139,9 +139,9 @@
 								<div
 									class="col-lg-12 col-sm-6 col-md-12 single_portfolio_project">
 									<div class="portfolio_box">
-										<a href="img/project-3.png" class="img-gal">
+										<a href="/resource/img/project-3.png" class="img-gal">
 											<div class="single_portfolio">
-												<img class="img-fluid w-100" src="img/project-3.png" alt="">
+												<img class="img-fluid w-100" src="/resource/img/project-3.png" alt="">
 											</div>
 										</a>
 										<div class="short_info">
@@ -161,9 +161,9 @@
 						id="Interior" role="tabpanel" aria-labelledby="Interior-tab">
 						<div class="col-lg-6 col-sm-12 col-md-6">
 							<div class="portfolio_box">
-								<a href="img/project-2.png" class="img-gal">
+								<a href="/resource/img/project-2.png" class="img-gal">
 									<div class="single_portfolio">
-										<img class="img-fluid w-100" src="img/project-2.png" alt="">
+										<img class="img-fluid w-100" src="/resource/img/project-2.png" alt="">
 									</div>
 								</a>
 								<div class="short_info">
@@ -180,9 +180,9 @@
 								<div
 									class="col-lg-12 col-sm-6 col-md-12 single_portfolio_project">
 									<div class="portfolio_box">
-										<a href="img/project-1.png" class="img-gal">
+										<a href="/resource/img/project-1.png" class="img-gal">
 											<div class="single_portfolio">
-												<img class="img-fluid w-100" src="img/project-1.png" alt="">
+												<img class="img-fluid w-100" src="/resource/img/project-1.png" alt="">
 											</div>
 										</a>
 										<div class="short_info">
@@ -197,9 +197,9 @@
 								<div
 									class="col-lg-12 col-sm-6 col-md-12 single_portfolio_project">
 									<div class="portfolio_box">
-										<a href="img/project-3.png" class="img-gal">
+										<a href="/resource/img/project-3.png" class="img-gal">
 											<div class="single_portfolio">
-												<img class="img-fluid w-100" src="img/project-3.png" alt="">
+												<img class="img-fluid w-100" src="/resource/img/project-3.png" alt="">
 											</div>
 										</a>
 										<div class="short_info">
@@ -219,9 +219,9 @@
 						id="Exterior" role="tabpanel" aria-labelledby="Exterior-tab">
 						<div class="col-lg-6 col-sm-12 col-md-6">
 							<div class="portfolio_box">
-								<a href="img/project-3.png" class="img-gal">
+								<a href="/resource/img/project-3.png" class="img-gal">
 									<div class="single_portfolio">
-										<img class="img-fluid w-100" src="img/project-3.png" alt="">
+										<img class="img-fluid w-100" src="/resource/img/project-3.png" alt="">
 									</div>
 								</a>
 								<div class="short_info">
@@ -238,9 +238,9 @@
 								<div
 									class="col-lg-12 col-sm-6 col-md-12 single_portfolio_project">
 									<div class="portfolio_box">
-										<a href="img/project-2.png" class="img-gal">
+										<a href="/resource/img/project-2.png" class="img-gal">
 											<div class="single_portfolio">
-												<img class="img-fluid w-100" src="img/project-2.png" alt="">
+												<img class="img-fluid w-100" src="/resource/img/project-2.png" alt="">
 											</div>
 										</a>
 										<div class="short_info">
@@ -255,9 +255,9 @@
 								<div
 									class="col-lg-12 col-sm-6 col-md-12 single_portfolio_project">
 									<div class="portfolio_box">
-										<a href="img/project-1.png" class="img-gal">
+										<a href="/resource/img/project-1.png" class="img-gal">
 											<div class="single_portfolio">
-												<img class="img-fluid w-100" src="img/project-1.png" alt="">
+												<img class="img-fluid w-100" src="/resource/img/project-1.png" alt="">
 											</div>
 										</a>
 										<div class="short_info">
@@ -277,9 +277,9 @@
 						id="Landing" role="tabpanel" aria-labelledby="Landing-tab">
 						<div class="col-lg-6 col-sm-12 col-md-6">
 							<div class="portfolio_box">
-								<a href="img/project-1.png" class="img-gal">
+								<a href="/resource/img/project-1.png" class="img-gal">
 									<div class="single_portfolio">
-										<img class="img-fluid w-100" src="img/project-1.png" alt="">
+										<img class="img-fluid w-100" src="/resource/img/project-1.png" alt="">
 									</div>
 								</a>
 								<div class="short_info">
@@ -296,9 +296,9 @@
 								<div
 									class="col-lg-12 col-sm-6 col-md-12 single_portfolio_project">
 									<div class="portfolio_box">
-										<a href="img/project-4.png" class="img-gal">
+										<a href="/resource/img/project-4.png" class="img-gal">
 											<div class="single_portfolio">
-												<img class="img-fluid w-100" src="img/project-5.png" alt="">
+												<img class="img-fluid w-100" src="/resource/img/project-5.png" alt="">
 											</div>
 										</a>
 										<div class="short_info">
@@ -313,9 +313,9 @@
 								<div
 									class="col-lg-12 col-sm-6 col-md-12 single_portfolio_project">
 									<div class="portfolio_box">
-										<a href="img/project-3.png" class="img-gal">
+										<a href="/resource/img/project-3.png" class="img-gal">
 											<div class="single_portfolio">
-												<img class="img-fluid w-100" src="img/project-3.png" alt="">
+												<img class="img-fluid w-100" src="/resource/img/project-3.png" alt="">
 											</div>
 										</a>
 										<div class="short_info">
@@ -351,7 +351,7 @@
 					<div class="row">
 						<div class="col-lg-6 col-sm-6">
 							<div class="single_service_text ">
-								<img src="img/icon/service_1.svg" alt="">
+								<img src="/resource/img/icon/service_1.svg" alt="">
 								<h4>house Planning</h4>
 								<p>Lorem ipsum dolor sit amet consectetur elit seiusmod
 									tempor incididunt</p>
@@ -359,7 +359,7 @@
 						</div>
 						<div class="col-lg-6 col-sm-6">
 							<div class="single_service_text">
-								<img src="img/icon/service_2.svg" alt="">
+								<img src="/resource/img/icon/service_2.svg" alt="">
 								<h4>house Build</h4>
 								<p>Lorem ipsum dolor sit amet consectetur elit seiusmod
 									tempor incididunt</p>
@@ -367,7 +367,7 @@
 						</div>
 						<div class="col-lg-6 col-sm-6">
 							<div class="single_service_text">
-								<img src="img/icon/service_3.svg" alt="">
+								<img src="/resource/img/icon/service_3.svg" alt="">
 								<h4>Design& Build</h4>
 								<p>Lorem ipsum dolor sit amet consectetur elit seiusmod
 									tempor incididunt</p>
@@ -375,7 +375,7 @@
 						</div>
 						<div class="col-lg-6 col-sm-6">
 							<div class="single_service_text">
-								<img src="img/icon/service_4.svg" alt="">
+								<img src="/resource/img/icon/service_4.svg" alt="">
 								<h4>Design& Build</h4>
 								<p>Lorem ipsum dolor sit amet consectetur elit seiusmod
 									tempor incididunt</p>
@@ -415,7 +415,7 @@
 					<div class="grid-sizer"></div>
 					<div class="grid-item big_weight">
 						<div class="project_img">
-							<img src="img/gallery/gallery_1.png" alt="">
+							<img src="/resource/img/gallery/gallery_1.png" alt="">
 							<div class="project_gallery_hover_text">
 								<p>Home Apartment</p>
 								<h3>
@@ -433,7 +433,7 @@
 					</div>
 					<div class="grid-item big_height">
 						<div class="project_img">
-							<img src="img/gallery/gallery_4.png" alt="">
+							<img src="/resource/img/gallery/gallery_4.png" alt="">
 							<div class="project_gallery_hover_text">
 								<p>Home Apartment</p>
 								<h3>
@@ -451,7 +451,7 @@
 					</div>
 					<div class="grid-item">
 						<div class="project_img">
-							<img src="img/gallery/gallery_2.png" alt="">
+							<img src="/resource/img/gallery/gallery_2.png" alt="">
 							<div class="project_gallery_hover_text">
 								<p>Home Apartment</p>
 								<h3>
@@ -469,7 +469,7 @@
 					</div>
 					<div class="grid-item">
 						<div class="project_img">
-							<img src="img/gallery/gallery_3.png" alt="">
+							<img src="/resource/img/gallery/gallery_3.png" alt="">
 							<div class="project_gallery_hover_text">
 								<p>Home Apartment</p>
 								<h3>
@@ -508,7 +508,7 @@
 			<div class="col-lg-7">
 				<div class="single_blog">
 					<div class="appartment_img">
-						<img src="img/blog_1.png" alt="">
+						<img src="/resource/img/blog_1.png" alt="">
 					</div>
 					<div class="single_appartment_content">
 						<p>
@@ -572,4 +572,4 @@
 </div>
 <!--::blog_part end::-->
 
-<%@ include file="layout/footer.jsp"%>
+<%@ include file="template/footer.jsp"%>
