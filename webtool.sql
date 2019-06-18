@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th6 17, 2019 lúc 11:59 AM
+-- Thời gian đã tạo: Th6 18, 2019 lúc 12:04 PM
 -- Phiên bản máy phục vụ: 10.1.37-MariaDB
 -- Phiên bản PHP: 7.3.0
 
@@ -105,7 +105,10 @@ CREATE TABLE `tag_post` (
 CREATE TABLE `user` (
   `username` varchar(50) NOT NULL,
   `name` varchar(255) NOT NULL,
+  `avatar` varchar(255) NOT NULL DEFAULT '',
   `password` varchar(255) NOT NULL,
+  `tmp_password` varchar(255) NOT NULL DEFAULT '',
+  `tmp_salt` varchar(255) NOT NULL DEFAULT '',
   `salt` varchar(255) NOT NULL,
   `role` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+.logo-img {
+	width: 150px;
+	height: 30px;
+}
+
+.input-error {
+	color: #ff3030;
+	display: none;
+	padding: 0 1rem;
+}
+
+.form-control-user:invalid {
+	background-color: #ffdddd;
+	border-color: #ff3030;
+}
+
+.form-control-user:valid {
+	background-color: #fff;
+	border-color: #d1d3e2;
+}

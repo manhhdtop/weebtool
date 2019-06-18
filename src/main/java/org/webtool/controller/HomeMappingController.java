@@ -88,7 +88,7 @@ public class HomeMappingController
 		return "layout/category";
 	}
 	
-	@RequestMapping(value = { "{category}/{slug}" })
+	@RequestMapping(value = { "bai-viet/{slug}" })
 	public String getPost(ModelMap model, @PathVariable("category") String category,
 	        @PathVariable("slug") String slug)
 	{
@@ -156,7 +156,7 @@ public class HomeMappingController
 	{
 		model.addAttribute("title", "ManhHoangIT - Trang không tồn tại!");
 		model.addAttribute("menus", getMenu());
-		return "404";
+		return "layout/404";
 	}
 	
 	@RequestMapping(value = { "/500-internal-server-error" })
@@ -164,7 +164,7 @@ public class HomeMappingController
 	{
 		model.addAttribute("title", "ManhHoangIT - Server error!");
 		model.addAttribute("menus", getMenu());
-		return "500";
+		return "layout/500";
 	}
 	
 }
