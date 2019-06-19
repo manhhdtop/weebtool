@@ -9,6 +9,7 @@ import org.webtool.Utils.Constant;
 import org.webtool.bean.Category;
 import org.webtool.bean.Menu;
 import org.webtool.bean.Post;
+import org.webtool.bean.User;
 
 public class DBUtil extends ConnectionUtils
 {
@@ -28,10 +29,10 @@ public class DBUtil extends ConnectionUtils
 		while (rs.next())
 		{
 			Menu m = new Menu();
-			m.setId(rs.getInt("id"));
-			m.setName(rs.getString("name"));
-			m.setSlug(rs.getString("slug"));
-			int parentId = rs.getInt("parent_id");
+			m.setId(rs.getInt(Constant.COL_ID));
+			m.setName(rs.getString(Constant.COL_NAME));
+			m.setSlug(rs.getString(Constant.COL_SLUG));
+			int parentId = rs.getInt(Constant.COL_CATEGORY_PARENT_ID);
 			if (parentId == 0)
 			{
 				result.add(m);
@@ -66,11 +67,11 @@ public class DBUtil extends ConnectionUtils
 		while (rs.next())
 		{
 			Category m = new Category();
-			m.setId(rs.getInt("id"));
-			m.setName(rs.getString("name"));
-			m.setSlug(rs.getString("slug"));
-			m.setDiscription(rs.getString("discription"));
-			int parentId = rs.getInt("parent_id");
+			m.setId(rs.getInt(Constant.COL_ID));
+			m.setName(rs.getString(Constant.COL_NAME));
+			m.setSlug(rs.getString(Constant.COL_SLUG));
+			m.setDiscription(rs.getString(Constant.COL_CATEGORY_DISCRIPTION));
+			int parentId = rs.getInt(Constant.COL_CATEGORY_PARENT_ID);
 			if (parentId == 0)
 			{
 				result.add(m);
@@ -105,10 +106,10 @@ public class DBUtil extends ConnectionUtils
 		while (rs.next())
 		{
 			result = new Category();
-			result.setId(rs.getInt("id"));
-			result.setName(rs.getString("name"));
-			result.setSlug(rs.getString("slug"));
-			result.setDiscription(rs.getString("discription"));
+			result.setId(rs.getInt(Constant.COL_ID));
+			result.setName(rs.getString(Constant.COL_NAME));
+			result.setSlug(rs.getString(Constant.COL_SLUG));
+			result.setDiscription(rs.getString(Constant.COL_CATEGORY_DISCRIPTION));
 		}
 		pstm.close();
 		rs.close();
@@ -129,16 +130,58 @@ public class DBUtil extends ConnectionUtils
 		while (rs.next())
 		{
 			result = new Post();
-			result.setId(rs.getInt("id"));
-			result.setTitle(rs.getString("title"));
-			result.setDiscription(rs.getString("discription"));
-			result.setContent(rs.getString("content"));
-			result.setSlug(rs.getString("slug"));
+			result.setId(rs.getInt(Constant.COL_ID));
+			result.setTitle(rs.getString(Constant.COL_POST_TITLE));
+			result.setDiscription(Constant.COL_POST_DISCRIPTION);
+			result.setContent(rs.getString(Constant.COL_POST_CONTENT));
+			result.setSlug(rs.getString(Constant.COL_SLUG));
 		}
 		pstm.close();
 		rs.close();
 		close();
 		return result;
+	}
+	
+	public static User getUser(String username)
+	        throws ClassNotFoundException, SQLException, NullPointerException
+	{
+		open();
+		User result = null;
+		sql = Constant.SQL_GET_USER;
+		pstm = c.prepareStatement(sql);
+		pstm.setString(1, username);
+		rs = pstm.executeQuery();
+		
+		if (rs.next())
+		{
+			result = new User();
+			result.setUsername(rs.getString(Constant.COL_USERNAME));
+			result.setName(rs.getString(Constant.COL_NAME));
+			result.setPassword(rs.getString(Constant.COL_PASSWORD));
+			result.setSalt(rs.getString(Constant.COL_SALT));
+			result.setAvatar(rs.getString(Constant.COL_AVATAR));
+			result.setTmpPassword(rs.getString(Constant.COL_TMP_PASSWORD));
+			result.setTmpSalt(rs.getString(Constant.COL_TMP_SALT));
+			result.setRole(rs.getInt(Constant.COL_ROLE));
+		}
+		pstm.close();
+		rs.close();
+		close();
+		return result;
+	}
+	
+	public static void updatePassword(String username, String password, String salt)
+	        throws ClassNotFoundException, SQLException, NullPointerException
+	{
+		open();
+		sql = Constant.SQL_UPDATE_PASSWORD;
+		pstm = c.prepareStatement(sql);
+		pstm.setString(1, password);
+		pstm.setString(2, salt);
+		pstm.setString(3, username);
+		pstm.executeUpdate();
+		pstm.close();
+		close();
 	}
 	
 }

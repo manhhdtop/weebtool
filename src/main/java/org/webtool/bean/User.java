@@ -2,11 +2,13 @@ package org.webtool.bean;
 
 public class User
 {
-	String username;
-	String name;
-	String avatar;
-	String password;
-	String salt;
+	private String username;
+	private String name;
+	private String avatar;
+	private String password;
+	private String salt;
+	private String tmpPassword;
+	private String tmpSalt;
 	int role;
 	
 	public User()
@@ -16,6 +18,8 @@ public class User
 		this.avatar = "";
 		this.password = "";
 		this.salt = "";
+		this.tmpPassword = "";
+		this.tmpSalt = "";
 		this.role = -1;
 	}
 	
@@ -26,6 +30,8 @@ public class User
 		this.avatar = avatar;
 		this.password = password;
 		this.salt = salt;
+		this.tmpPassword = "";
+		this.tmpSalt = "";
 		this.role = role;
 	}
 	
@@ -77,6 +83,26 @@ public class User
 	public void setSalt(String salt)
 	{
 		this.salt = salt;
+	}
+	
+	public String getTmpPassword()
+	{
+		return tmpPassword;
+	}
+	
+	public void setTmpPassword(String tmpPassword)
+	{
+		this.tmpPassword = tmpPassword;
+	}
+	
+	public String getTmpSalt()
+	{
+		return tmpSalt;
+	}
+	
+	public void setTmpSalt(String tmpSalt)
+	{
+		this.tmpSalt = tmpSalt;
 	}
 	
 	public int getRole()

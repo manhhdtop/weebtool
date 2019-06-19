@@ -111,6 +111,7 @@
 <script src="/resource/js/jquery.ajaxchimp.min.js"></script>
 <script src="/resource/js/jquery.form.js"></script>
 <script src="/resource/js/jquery.validate.min.js"></script>
+<script src="/resource/js/jquery-cookie.js"></script>
 <script src="/resource/js/mail-script.js"></script>
 <!-- counter js -->
 <script src="/resource/js/jquery.counterup.min.js"></script>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th6 18, 2019 lúc 12:04 PM
+-- Thời gian đã tạo: Th6 19, 2019 lúc 12:02 PM
 -- Phiên bản máy phục vụ: 10.1.37-MariaDB
 -- Phiên bản PHP: 7.3.0
 
@@ -107,11 +107,18 @@ CREATE TABLE `user` (
   `name` varchar(255) NOT NULL,
   `avatar` varchar(255) NOT NULL DEFAULT '',
   `password` varchar(255) NOT NULL,
+  `salt` varchar(255) NOT NULL,
   `tmp_password` varchar(255) NOT NULL DEFAULT '',
   `tmp_salt` varchar(255) NOT NULL DEFAULT '',
-  `salt` varchar(255) NOT NULL,
   `role` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `user`
+--
+
+INSERT INTO `user` (`username`, `name`, `avatar`, `password`, `salt`, `tmp_password`, `tmp_salt`, `role`) VALUES
+('admin', 'Takatori', '', 'NkbD1FRta+cFBMAMqlXju9H9CZIM1H3fvrfQG3+P/1I=', 'R.D2gXJZxPQ8o2GRvLdXMAt_snJcgoE-U8OjlkD9e1zIxRcFFDZBksYPKRE98qSje n0SCJQX8nrTEglenGW1FgSG77JRU4JMS6tDIruR9CPT5Q--GZ_a.ceK9VE3IQOVxPrRhfgS4.rA2I997I2ZCzgvHf0F8iYjcHNcF_z9VQyZz1WGl6V8fWrhGJIDvlRtfTn-YKX9sTxLWpYFZ8lxWicrEibllUiz.nAKKT5G4ysR5Lf x797UhPLr4E8jr', '', '', 1);
 
 --
 -- Chỉ mục cho các bảng đã đổ

@@ -17,6 +17,13 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- Java JWT -->
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+
 		<!-- Servlet Library -->
 		<!-- http://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
 		<dependency>

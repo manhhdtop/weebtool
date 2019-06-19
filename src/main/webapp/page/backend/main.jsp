@@ -381,7 +381,7 @@
 				<div class="modal-footer">
 					<button class="btn btn-secondary" type="button"
 						data-dismiss="modal">Cancel</button>
-					<a class="btn btn-primary" href="login.html">Logout</a>
+					<button id="logout" class="btn btn-primary">Logout</button>
 				</div>
 			</div>
 		</div>
@@ -392,6 +392,7 @@
 	<script src="/resource/js/bootstrap.bundle.min.js"></script>
 	<!-- Core plugin JavaScript-->
 	<script src="/resource/js/jquery.easing.min.js"></script>
+	<script src="/resource/js/jquery-cookie.js"></script>
 	<!-- Custom scripts for all pages-->
 	<script src="/resource/js/sb-admin-2.min.js"></script>
 	<!-- Page level plugins -->

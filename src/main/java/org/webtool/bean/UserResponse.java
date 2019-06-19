@@ -2,23 +2,25 @@ package org.webtool.bean;
 
 public class UserResponse
 {
+	private String token;
 	private User user;
 	private boolean validate;
-	private String errorMessages;
+	private String messages;
 	
 	public UserResponse()
 	{
 		this.user = null;
+		this.token = "";
 		this.validate = false;
-		this.errorMessages = "";
+		this.messages = "";
 	}
 	
-	public UserResponse(User user, boolean validate, String errorMessages)
+	public UserResponse(User user, String token, boolean validate, String messages)
 	{
-		super();
 		this.user = user;
+		this.token = token;
 		this.validate = validate;
-		this.errorMessages = errorMessages;
+		this.messages = messages;
 	}
 	
 	public User getUser()
@@ -31,6 +33,16 @@ public class UserResponse
 		this.user = user;
 	}
 	
+	public String getToken()
+	{
+		return token;
+	}
+	
+	public void setToken(String token)
+	{
+		this.token = token;
+	}
+	
 	public boolean isValidate()
 	{
 		return validate;
@@ -41,14 +53,14 @@ public class UserResponse
 		this.validate = validate;
 	}
 	
-	public String getErrorMessages()
+	public String getMessages()
 	{
-		return errorMessages;
+		return messages;
 	}
 	
-	public void setErrorMessages(String errorMessages)
+	public void setMessages(String messages)
 	{
-		this.errorMessages = errorMessages;
+		this.messages = messages;
 	}
 	
 }

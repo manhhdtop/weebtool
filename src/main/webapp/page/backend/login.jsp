@@ -26,6 +26,9 @@
 <!-- Custom styles for this template-->
 <link href="/resource/css/sb-admin-2.min.css" rel="stylesheet">
 <link href="/resource/css/admin.css" rel="stylesheet">
+<link href="/resource/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+	href="/resource/css/showLoading.css" />
 
 </head>
 
@@ -48,7 +51,8 @@
 								</div>
 								<form name="loginForm" class="user" method="post">
 									<div class="form-group">
-										<label id="loginError" class="input-error"></label>
+										<label id="loginError" class="input-error text-danger"></label>
+										<label id="loginSuccess" class="input-success text-success"></label>
 									</div>
 									<div class="form-group">
 										<input type="text" class="form-control form-control-user"
@@ -60,16 +64,16 @@
 											id="password" placeholder="Password..."> <label
 											id="passwordError" class="input-error"></label>
 									</div>
-									<button id="login" type="submit"
-										class="btn btn-primary btn-user btn-block">Login</button>
+									<button id="login" type="submit" data-spinner-type=""
+										data-spinner-text="Đang đăng nhập..."
+										class="btn btn-primary btn-user btn-block">Đăng nhập</button>
 								</form>
 								<hr>
 								<div class="text-center">
-									<a class="small" href="forgot-password.html">Forgot
-										Password?</a>
+									<a class="small" href="forgot-password.html">Quên mật khẩu?</a>
 								</div>
 								<div class="text-center">
-									<a class="small" href="register.html">Create an Account!</a>
+									<a class="small" href="register.html">Tạo tài khoản!</a>
 								</div>
 							</div>
 						</div>
@@ -84,13 +88,14 @@
 
 	<!-- Bootstrap core JavaScript-->
 	<script src="/resource/js/jquery.min.js"></script>
+	<script src="/resource/js/jquery-cookie.js"></script>
 	<script src="/resource/js/bootstrap.bundle.min.js"></script>
 
 	<!-- Core plugin JavaScript-->
 	<script src="/resource/js/jquery.easing.min.js"></script>
-
+	<script type="text/javascript"
+		src="/resource/js/jquery.showLoading.min.js"></script>
 	<!-- Custom scripts for all pages-->
-	<script src="/resource/js/sb-admin-2.min.js"></script>
 	<script src="/resource/js/login.js"></script>
 
 </body>

@@ -6,7 +6,11 @@
 }
 
 .input-error {
-	color: #ff3030;
+	display: none;
+	padding: 0 1rem;
+}
+
+.input-success {
 	display: none;
 	padding: 0 1rem;
 }

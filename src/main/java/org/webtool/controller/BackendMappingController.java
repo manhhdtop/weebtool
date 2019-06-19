@@ -1,6 +1,7 @@
 package org.webtool.controller;
 
 import java.util.ArrayList;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -34,20 +35,15 @@ public class BackendMappingController
 	public UserResponse doLogin(@RequestParam("username") String username,
 	        @RequestParam("password") String password)
 	{
-		UserResponse response = new UserResponse();
-		
-		if (username.isEmpty() || password.isEmpty())
-		{
-			System.out.println("Error: " + username);
-			
-			response.setValidate(false);
-		}
-		else
-		{
-			System.out.println("Username: " + username);
-			response.setValidate(true);
-		}
-		return response;
+		return new UserController().login(username, password);
+	}
+	
+	@PostMapping(value = { "do-logout", "backend/do-logout" })
+	@ResponseBody
+	public Boolean doLogout(@RequestParam("token") String token)
+	{
+		new UserController().logout(token);
+		return true;
 	}
 	
 	@RequestMapping(value = { "backend/index", "backend/index.html", "backend/index.jsp" })

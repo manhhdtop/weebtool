@@ -1,5 +1,21 @@
 var usernameAttr = 0;
 var passwordAttr = 0;
+var token = 'token';
+var user = 'user';
+
+$(document).ready(function()
+{
+	if (Cookies.get(token) != undefined && Cookies.get(token) != 'undefined' && Cookies.get(token) != '')
+	{
+		Cookies.set(token, Cookies.get(token), {
+			expires : 30
+		});
+		Cookies.set(user, Cookies.get(user), {
+			expires : 30
+		});
+		window.location = ("/backend");
+	}
+});
 
 $('#username').click(function()
 {
@@ -45,9 +61,10 @@ function addPasswordAttr()
 {
 	if (passwordAttr == 0)
 	{
-		$('#password').prop('pattern', "[A-Za-z0-9]{6,50}");
+		$('#password').prop('pattern', "[A-Za-z0-9!@#$%^&*]{6,50}");
 		$('#password').prop('required', true);
-		$('#password').prop("title", "Password bao gồm chữ và số độ dài 6-50 ký tự.");
+		$('#password').prop("title",
+		        "Password bao gồm chữ, số và các ký tự '!, @, #, $, %, ^, &, *' độ dài 6-50 ký tự.");
 		passwordAttr = 1;
 	}
 	if ($('#password').is(":valid"))
@@ -69,6 +86,8 @@ $(function()
 {
 	$('#login').click(function(e)
 	{
+		$('form').showLoading();
+		
 		// Prevent default submission of form
 		e.preventDefault();
 		
@@ -105,7 +124,7 @@ $(function()
 		
 		if (valid)
 		{
-			$.post({
+			$.ajax({
 			    type : "POST",
 			    data : {
 			        username : $('#username').val(),
@@ -115,17 +134,51 @@ $(function()
 			    timeout : 100000,
 			    success : function(res)
 			    {
-				    console.log(res);
-				    $('#loginError').html('Login success!');
-				    $('#loginError').show();
+				    console.log(res.user);
+				    if (res.validate)
+				    {
+					    Cookies.set(token, res.token, {
+						    expires : 30
+					    });
+					    Cookies.set(user, res.user, {
+						    expires : 30
+					    });
+					    var timeLeft = 3;
+					    $("#loginSuccess").show();
+					    $("#loginSuccess").html(res.messages);
+					    window.setInterval(function()
+					    {
+						    if (timeLeft == 0)
+						    {
+							    $('form').hideLoading();
+//							    window.location = ("/backend");
+						    }
+						    else
+						    {
+							    $("#loginSuccess").html(res.messages + " Chuyển hướng sau " + timeLeft-- + "s...");
+						    }
+					    }, 1000);
+				    }
+				    else
+				    {
+					    $('form').hideLoading();
+					    $("#loginError").show();
+					    $('#loginError').html(res.messages);
+				    }
 			    },
 			    error : function(res)
 			    {
+				    $('form').hideLoading();
 				    console.log(res);
 				    $('#loginError').html('Login error!');
 				    $('#loginError').show();
 			    }
 			})
 		}
+		else
+		{
+			$('form').hideLoading();
+		}
+		
 	})
 })
