@@ -87,13 +87,13 @@ $(function()
 	$('#login').click(function(e)
 	{
 		$('form').showLoading();
-		
+
 		// Prevent default submission of form
 		e.preventDefault();
-		
+
 		$('#loginError').html('');
 		$('#loginError').hide();
-		
+
 		addUsernameAttr();
 		addPasswordAttr();
 		var valid = true;
@@ -121,7 +121,7 @@ $(function()
 			$('#password').removeAttr('title');
 			$('#passwordError').hide();
 		}
-		
+
 		if (valid)
 		{
 			$.ajax({
@@ -151,7 +151,7 @@ $(function()
 						    if (timeLeft == 0)
 						    {
 							    $('form').hideLoading();
-//							    window.location = ("/backend");
+							    window.location = ("/backend");
 						    }
 						    else
 						    {
@@ -179,6 +179,6 @@ $(function()
 		{
 			$('form').hideLoading();
 		}
-		
+
 	})
 })
